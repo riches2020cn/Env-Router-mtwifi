@@ -1,0 +1,15 @@
+<img src="https://avatars.githubusercontent.com/u/53193414?s=200&v=4" alt="logo" width="200" height="200" align="right">
+
+## 特别提示 
+
+- **本人不对任何人因使用本固件所遭受的任何理论或实际的损失承担责任！**
+- **本固件禁止用于任何商业用途，请务必严格遵守国家互联网使用相关法律规定！**
+
+## 项目说明 
+- 脚本 Build-6.6.yml：TP-Link 7DR7299 闭源驱动
+- 脚本 Build-6.6_ax6000_immortalwrt.....：红米“AX6000-110m大分区”闭源驱动
+- 脚本修改自 WoChen5770 仓库：https://github.com/WoChen5770/openwrt-7dr7299
+- 在 scripts/Redmi-AX6000 目录包含红米“AX6000-110m大分区”文件和 config 配置文件
+- 在 scripts/6.6 目录升级 golang1.27 版本，必须修改 scripts/diy-6.6.sh 文件
+- 在 scripts/diy-script.sh 文件中，可修改路由器默认IP地址
+- 在 configs 目录只包含 TP-Link 7DR7299 基础配置文件“config”，可自定义配置文件“CUSTOMIZE.txt”
