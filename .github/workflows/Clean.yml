@@ -1,23 +1,26 @@
-name: Clean
+name: Auto Clean Releases & Workflows
 
 on:
   workflow_run:
-    workflows: ["Build-6.6", "Build-6.18", "Build-6.6_ax6000_immortalwrt_237_golang_msd_lite_110m"]
     types:
       - completed
-  workflow_dispatch:
-  
+  workflow_dispatch: # 支持在 Actions 页面手动点击触发
+
 permissions: write-all
 
 jobs:
   auto_clean:
     runs-on: ubuntu-latest
     steps:
-    - name: Delete releases and workflows runs
-      uses: ophub/delete-releases-workflows@main
-      with:
-        delete_releases: true
-        releases_keep_latest: 5
-        delete_workflows: true
-        workflows_keep_day: 30
-        gh_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Delete old releases and workflow runs
+        uses: ophub/delete-releases-workflows@main
+        with:
+          # 是否清理旧的 Release 固件
+          delete_releases: true
+          # 保留最新的几份 Release 固件（例如设置为 3 或 5）
+          releases_keep_latest: 5
+          # 是否清理历史的 Actions 运行日志和临时 Artifact
+          delete_workflows: true
+          # 历史工作流运行记录保留的天数（超过天数的日志自动删掉，节省空间）
+          workflows_keep_day: 14
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
