@@ -9,6 +9,7 @@
 - 脚本 Build-6.6.yml：TP-Link 7DR7299 闭源驱动
 - 脚本 Build-6.6_ax6000_immortalwrt.....：红米“AX6000-110m大分区”闭源驱动
 - 脚本修改自 WoChen5770 仓库：https://github.com/WoChen5770/openwrt-7dr7299
+- 删除了源码自带的 dae、luci-app-dae、daed、luci-app-daed，拉取第三方 luci-app-daed（三合一）来替换，删除了源码自带的 mosdns、smartdns 插件，重新拉取不同源来替换
 - 在 scripts/Redmi-AX6000 目录包含红米“AX6000-110m大分区”文件和 config 配置文件
 - 在 scripts/6.6 目录升级 golang1.27 版本，必须修改 scripts/diy-6.6.sh 文件
 - 在 scripts/diy-script.sh 文件中，可修改路由器默认IP地址
