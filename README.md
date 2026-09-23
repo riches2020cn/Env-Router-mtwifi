@@ -8,7 +8,7 @@
 ## 项目说明
 - 脚本来自 WoChen5770 仓库：https://github.com/WoChen5770/openwrt-7dr7299（未作任何修改）
 - 脚本 Build-6.6.yml：TP-Link 7DR7299 闭源驱动
-- 增加一个脚本：Build-6.6_ax6000_immortalwrt.....：红米“AX6000-110m大分区”闭源驱动
+- 自建脚本：Build-6.6_ax6000_immortalwrt.....：红米“AX6000-110m大分区”闭源驱动
 
 ## 脚本说明：
 - 拉取第三方 luci-app-daed（二合一插件）来替换“dae、luci-app-dae”和“daed、luci-app-daed”2个插件。拉取第三方来替换“msd_lite、mosdns、smartdns”3个插件
