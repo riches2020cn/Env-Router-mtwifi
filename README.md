@@ -6,7 +6,7 @@
 - **本固件禁止用于任何商业用途，请务必严格遵守国家互联网使用相关法律规定！**
 
 ## 项目说明
-- 脚本来自 WoChen5770 仓库：https://github.com/WoChen5770/openwrt-7dr7299（未作任何修改）
+- 脚本来自 WoChen5770 仓库（未作任何修改）：https://github.com/WoChen5770/openwrt-7dr7299
 - 脚本 Build-6.6.yml：TP-Link 7DR7299 闭源驱动
 - 自建脚本 Build-6.6_ax6000_immortalwrt.....：红米“AX6000-110m大分区”闭源驱动
 
