@@ -9,8 +9,8 @@
 
 ## 项目说明
 - 脚本来自 WoChen5770 仓库：https://github.com/WoChen5770/openwrt-7dr7299
-- “Build-6.6.yml”脚本：TP-Link 7DR7299 闭源驱动
-- “Build-6.6_ax6000_immortalwrt_237_golang_msd_lite.yml”自建脚本：红米“AX6000-110m大分区”闭源驱动
+- 脚本“Build-6.6.yml”：TP-Link 7DR7299 闭源驱动
+- 自建脚本“Build-6.6_ax6000_immortalwrt_237_golang_msd_lite.yml”：红米AX6000 “110m大分区” 闭源驱动
 
 ## 脚本说明：（遵循原作者，未作任何修改）
 - 拉取第三方 luci-app-daed（二合一插件）来替换“dae、luci-app-dae”和“daed、luci-app-daed”2个插件。拉取第三方来替换“msd_lite、mosdns、smartdns”3个插件，在 scripts/diy-script.sh 文件中，删除 haproxy（负载均衡）
